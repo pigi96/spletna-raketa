@@ -1,0 +1,210 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.background-img {
+    height: 100%;
+    width: 100%;
+    position: center;
+    background:url("../img/universe.jpg");
+    background-repeat: no-repeat;
+}
+.place-on-eye {
+    position: absolute;
+    color: #fff;
+    margin:0;
+}
+
+@media (min-aspect-ratio: 2/1) {
+    .asset-1 {
+        top: 50%;
+        left: 0%;
+    }
+    .asset-3 {
+        top: 30%;
+        left: 20%;
+    }
+    .asset-4 {
+        top: 60%;
+        left: 35%;
+    }
+    .asset-5 {
+        top: 30%;
+        left: 45%;
+    }
+    .asset-6 {
+        top: 50%;
+        left: 65%;
+    }
+    .asset-7 {
+        top: 20%;
+        left: 80%;
+    }
+}
+
+@media (max-aspect-ratio: 2/1) {
+    .asset-1 {
+        top: 50%;
+        left: 0%;
+    }
+    .asset-3 {
+        top: 30%;
+        left: 20%;
+    }
+    .asset-4 {
+        top: 60%;
+        left: 35%;
+    }
+    .asset-5 {
+        top: 30%;
+        left: 45%;
+    }
+    .asset-6 {
+        top: 50%;
+        left: 65%;
+    }
+    .asset-7 {
+        top: 20%;
+        left: 80%;
+    }
+}
+
+
+
+
+.zoom {
+  padding: 50px;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+body {
+    background-image: url("../img/universe.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.viewport {
+    position: center;
+    overflow: hidden;
+    attachment: fixed;
+    repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    body1{
+        background-position: 58.33325% center;
+    }
+}
+
+.planet {
+    image-width: 500px;
+    color: red;
+}
+
+.asset-1 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+.asset-3 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+.asset-4 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+.asset-5 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+.asset-6 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+.asset-7 {
+  height: 100px;
+  width: 180px;
+  position: absolute;
+}
+
+.asset-2 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 600px;
+  }
+}
+
+.btn .fa {
+  margin-left: 3px;
+}
+
+.top-nav-collapse {
+  background-color: #424f95 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #424f95 !important;
+  }
+}
+
+.btn-white {
+  color: black !important;
+}
+
+h6 {
+  line-height: 1.7;
+}
+
+.rgba-gradient {
+  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
+  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+}

@@ -1,0 +1,19 @@
+{
+  "name": "osob",
+  "version": "1.0.0",
+  "description": "os buni huda stran",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://pigi98@bitbucket.org/Bbjber/osob_1projektna.git"
+  },
+  "dependencies": {
+
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Bbjber/osob_1projektna#readme"
+}
