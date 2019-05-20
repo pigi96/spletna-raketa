@@ -1,21 +1,35 @@
-html, body{
-    height: 100%;
-    width: 100%;
+.scrolling-wrapper {
+
+
+  .card {
+    display: inline-block;
+  }
+
+
 }
+
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+}
+
 .background-img {
-    height: 100%;
-    width: 100%;
-    position: center;
-    background:url("../img/universe.jpg");
+    background-image: url("../img/universe.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-position: absolute;
+
+    width: auto;
+    height: 100%;
 }
+
 .place-on-eye {
     position: absolute;
     color: #fff;
     margin:0;
 }
 
-@media (min-aspect-ratio: 2/1) {
+/*@media (min-aspect-ratio: 2/1) {
     .asset-1 {
         top: 50%;
         left: 0%;
@@ -67,7 +81,7 @@ html, body{
         top: 20%;
         left: 80%;
     }
-}
+}*/
 
 
 
@@ -88,21 +102,104 @@ body {
     background-image: url("../img/universe.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+
+    background-position: absolute;
+
+    padding-top: 0;
+    margin-top: 0;
+
+    width: auto;
+    height: 100%;
 }
 
-.viewport {
-    position: center;
-    overflow: hidden;
-    attachment: fixed;
-    repeat: no-repeat;
+#scroll {
+    width: 5000px;
+    height: 100%;
+    overflow: auto;
+    overflow-y: hidden;
+    margin: 0 auto;
+    white-space: nowrap
 }
 
-@media (min-width: 768px) {
-    body1{
-        background-position: 58.33325% center;
-    }
+
+
+.venus-tab {
+    width: 100px;
+    height: 180px;
+    margin-top: 0px;
+    padding: 0px 0px;
+    margin-left: 345px;
+    display: inline;
 }
+
+.earth-tab {
+    width: 100px;
+    height: 180px;
+    margin-top: 0px;
+    padding: 0px 0px;
+    margin-left: 515px;
+    display: inline;
+}
+
+.luna-tab {
+    width: 100px;
+    height: 180px;
+    margin-top: 0px;
+    padding: 0px 0px;
+    margin-left: 470px;
+    display: inline;
+}
+
+.mars-tab {
+    width: 100px;
+    height: 180px;
+    margin-top: 0px;
+    padding: 0px 0px;
+    margin-left: 420px;
+    display: inline;
+}
+
+
+
+
+.venus-planet {
+    width: 200px;
+    height: 200px;
+    padding: 100px 100px;
+    margin-left: 200px;
+    margin-top: 100px;
+    display: inline;
+}
+
+.earth-planet {
+    width: 220px;
+    height: 220px;
+    padding: 100px 100px;
+    margin-left: 200px;
+    margin-top: 100px;
+    display: inline;
+}
+
+.luna-planet {
+    width: 100px;
+    height: 100px;
+    padding: 100px 100px;
+    margin-left: 200px;
+    margin-top: 100px;
+    display: inline;
+}
+
+.mars-planet {
+    width: 150px;
+    height: 150px;
+    padding: 100px 100px;
+    margin-left: 200px;
+    margin-top: 100px;
+    display: inline;
+}
+
+
+
 
 .planet {
     image-width: 500px;
@@ -113,98 +210,46 @@ body {
   height: 100px;
   width: 100px;
   position: absolute;
+  left: 100px;
+  display: inline;
 }
 
 .asset-3 {
   height: 100px;
   width: 100px;
   position: absolute;
+  left: 500px;
+  display: inline;
 }
 
 .asset-4 {
   height: 100px;
   width: 100px;
   position: absolute;
+  left: 900px;
+  display: inline;
 }
 
 .asset-5 {
   height: 100px;
   width: 100px;
-  position: absolute;
+  position: fixed;
+  left: 1300px;
+  display: inline;
 }
 
 .asset-6 {
   height: 100px;
   width: 100px;
-  position: absolute;
+  position: fixed;
+  left: 1700px;
+  display: inline;
 }
 
 .asset-7 {
   height: 100px;
   width: 180px;
-  position: absolute;
-}
-
-.asset-2 {
-  height: 100px;
-  width: 100px;
-  position: absolute;
-}
-
-html,
-body,
-header,
-.view {
-  height: 100%;
-}
-
-@media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 1000px;
-  }
-}
-@media (min-width: 800px) and (max-width: 850px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 600px;
-  }
-}
-
-.btn .fa {
-  margin-left: 3px;
-}
-
-.top-nav-collapse {
-  background-color: #424f95 !important;
-}
-
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-}
-
-@media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #424f95 !important;
-  }
-}
-
-.btn-white {
-  color: black !important;
-}
-
-h6 {
-  line-height: 1.7;
-}
-
-.rgba-gradient {
-  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));
-  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
-  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+  position: fixed;
+  left: 2100px;
+  display: inline;
 }
