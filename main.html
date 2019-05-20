@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="public/style/style.css" media="screen" />
+
+    <!-- referenced scripts -->
+    <script type="text/javascript" src="public/js/helper.js"></script>
+    <script type="text/javascript" src="public/js/rocket.js"></script>
+    <script type="text/javascript" src="public/js/background.js"></script>
+    <script type="text/javascript" src="public/js/foreground.js"></script>
+    <script type="text/javascript" src="public/js/planet.js"></script>
+    <script type="text/javascript" src="public/js/controller.js"></script>
+    <script type="text/javascript" src="public/js/main.js"></script>
+</head>
+
+
+<body onload="initialize()">
+
+    <div id="container">
+        <canvas id="canvasBackground" width="4472px" height="2500px"
+                style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+        <canvas id="canvasForeground" width="4472px" height="2500px"
+                style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+    </div>
+</body>
+</html>
