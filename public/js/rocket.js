@@ -29,22 +29,29 @@ function Rocket(name, img, x, y, width, height) {
 	}
 
 	this.rocketMovement = function(e) {
+	    var changed = false;
+
 	    if (e.keyCode == 40) {
 	        y = y + 50;
 	        this.direction = 0;
+	        changed = true;
 	    } else if (e.keyCode == 37) {
 	        x = x - 50;
 	        this.direction = 1;
+	        changed = true;
 	    } else if (e.keyCode == 39) {
 	        x = x + 50;
 	        this.direction = 2;
+	        changed = true;
 	    } else if (e.keyCode == 38) {
 	        y = y - 50;
 	        this.direction = 3;
+	        changed = true;
 	    }
 
-
-        scrollWrapper(y-540, x-800);
-        drawForeground();
+        if (changed) {
+            scrollWrapper(y-540, x-800);
+            drawForeground();
+        }
 	}
 }
