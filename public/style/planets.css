@@ -1,0 +1,61 @@
+.travel {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+}
+
+.planet {
+    padding: 0 0;
+    margin: 0 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.venus {
+    width: 180px;
+    height: 180px;
+    display: inline;
+    left: 100px;
+    top: 100px;
+}
+
+.earth {
+    width: 200px;
+    height: 200px;
+    display: inline;
+    left: 900px;
+    top: 400px;
+}
+
+.earth-to-venus {
+    left: 800px;
+    top: 300px;
+}
+
+.earth-to-mars {
+    left: 1100px;
+    top: 500px;
+}
+
+.earth-to-luna {
+    left: 800px;
+    top: 550px;
+}
+
+
+.luna {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    left: 400px;
+    top: 1300px;
+}
+
+.mars {
+    width: 150px;
+    height: 150px;
+    display: inline;
+    left: 1600px;
+    top: 700px;
+}

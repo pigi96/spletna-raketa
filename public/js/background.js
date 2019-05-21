@@ -16,5 +16,5 @@ function drawBackground() {
         var ctx = canvasBackground.getContext("2d");
     }
 
-    ctx.drawImage(backgroundImg, 0, 0, 4472, 2500);
+    ctx.drawImage(backgroundImg, 0, 0, canvasBackground.width, canvasForeground.height);
 }

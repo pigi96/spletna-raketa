@@ -7,16 +7,7 @@ var rocketUserObj;
 function initForeground() {
     canvasForeground = document.getElementById("canvasForeground");
 
-    earthPlanetObj = new Planet('Earth', loadedImages[imgPath+'Earth planet.png'], 100, 200, 100, 100);
-    lunaPlanetObj = new Planet('Luna', loadedImages[imgPath+'Luna planet.png'], 750, 200, 100, 100);
-    marsPlanetObj =  new Planet('Luna', loadedImages[imgPath+'Mars planet.png'], 450, 500, 100, 100);
-    venusPlanetObj =  new Planet('Luna', loadedImages[imgPath+'Venus planet.png'], 900, 600, 100, 100);
-    rocketUserObj = new Rocket('Rocket', loadedImages[imgPath+'rocket.png'], 100, 200, 100, 100);
-
-    window.onkeydown = function(e) {
-        // React to the mouse down event
-        rocketUserObj.rocketMovement(e);
-    }
+    rocketUserObj = new Rocket('Rocket', loadedImages[imgPath+'rocket.png'], 950, 450, 100, 100);
 }
 
 function drawForeground() {
@@ -28,9 +19,5 @@ function drawForeground() {
 
     ctx.clearRect(0, 0, canvasForeground.width, canvasForeground.height);
 
-    earthPlanetObj.draw(ctx);
-    lunaPlanetObj.draw(ctx);
-    marsPlanetObj.draw(ctx);
-    venusPlanetObj.draw(ctx);
     rocketUserObj.draw(ctx);
 }

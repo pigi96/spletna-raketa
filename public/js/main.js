@@ -13,6 +13,8 @@ function initialize() {
 }
 
 function initializeAfterLoad() {
+    initController();
+
     initBackground();
     initForeground();
 

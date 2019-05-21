@@ -8,50 +8,86 @@ function Rocket(name, img, x, y, width, height) {
 
 	this.direction = 0;
 
+    this.dirX = 0;
+    this.dirY = 0;
+
+    this.moveTowards = function(dx, dy) {
+        dirX = x - dx;
+        dirY = y - dy;
+
+        var sum = Math.sqrt(dirX*dirX + dirY*dirY);
+        if (sum != 0) {
+            dirX /= sum;
+            dirY /= sum;
+        } else {
+            // 0...
+        }
+//        let sum = Math.sqrt(this.pointingTo[0]*this.pointingTo[0]+this.pointingTo[1]*this.pointingTo[1]);
+//        if (sum == 0) {
+//            sum = 0.0001;
+//        }
+//        this.pointingTo[0] = this.pointingTo[0] / sum;
+//        this.pointingTo[1] = this.pointingTo[1] / sum;
+//
+//        let angle = Math.atan2(this.pointingTo[0], -this.pointingTo[1]);
+//        if (angle >= 0) {
+//            this.angle = angle * (4 / Math.PI);
+//        } else {
+//            this.angle = 4 + (4 + angle * (4 / Math.PI));
+//        }
+    }
+
+    this.updateMovement = function() {
+        y = y - 4*dirY;
+        x = x - 4*dirX;
+    }
+
 	this.draw = function(ctx) {
-	    ctx.save();
+        ctx.save();
 
         ctx.translate(x + width/2, y + height/2);
-	    if (this.direction == 0) {
-	        ctx.rotate(180 * Math.PI/180);
-	    } else if (this.direction == 1) {
-	        ctx.rotate(270 * Math.PI/180);
-	    } else if (this.direction == 2) {
-	        ctx.rotate(90 * Math.PI/180);
-	    } else {
-	        ctx.rotate(0 * Math.PI/180);
-	    }
+
+        //var angle = Math.atan2(-dirY, -dirX);
+
+        var angle = Math.atan2(dirX, -dirY);
+        if (angle >= 0) {
+            //angle = angle * (9 / Math.PI);
+        } else {
+            //angle = 4 + (4 + angle * (4 / Math.PI));
+         }
+
+	    ctx.rotate(angle);
+
 	    ctx.translate(-x - width/2, -y - height/2);
 
+        scrollWrapper(y-540, x-800);
 	    ctx.drawImage(img, x, y, width, height);
 
-	    ctx.restore();
+        ctx.restore();
 	}
 
 	this.rocketMovement = function(e) {
 	    var changed = false;
 
-	    if (e.keyCode == 40) {
-	        y = y + 50;
-	        this.direction = 0;
-	        changed = true;
-	    } else if (e.keyCode == 37) {
-	        x = x - 50;
-	        this.direction = 1;
-	        changed = true;
-	    } else if (e.keyCode == 39) {
-	        x = x + 50;
-	        this.direction = 2;
-	        changed = true;
-	    } else if (e.keyCode == 38) {
-	        y = y - 50;
-	        this.direction = 3;
-	        changed = true;
-	    }
-
-        if (changed) {
-            scrollWrapper(y-540, x-800);
-            drawForeground();
-        }
+        scrollWrapper(y-540, x-800);
+        drawForeground();
+        visitPlanet();
 	}
+
+	this.change = function(x, y) {
+	    this.x = x;
+	    this.y = y;
+	}
+
+	this.distance =  function(x2, y2) {
+        var a = x - x2;
+        var b = y - y2;
+
+        var c = Math.sqrt(a*a + b*b);
+        if (c < 10) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
