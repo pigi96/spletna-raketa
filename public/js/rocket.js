@@ -8,6 +8,8 @@ function Rocket(name, img, x, y, width, height) {
 
 	this.direction = 0;
 
+
+
     this.dirX = 0;
     this.dirY = 0;
 
@@ -61,7 +63,7 @@ function Rocket(name, img, x, y, width, height) {
 
 	    ctx.translate(-x - width/2, -y - height/2);
 
-        scrollWrapper(y-540, x-800);
+        scrollWrapper(y-400, x-800);
 	    ctx.drawImage(img, x, y, width, height);
 
         ctx.restore();
@@ -70,7 +72,6 @@ function Rocket(name, img, x, y, width, height) {
 	this.rocketMovement = function(e) {
 	    var changed = false;
 
-        scrollWrapper(y-540, x-800);
         drawForeground();
         visitPlanet();
 	}
