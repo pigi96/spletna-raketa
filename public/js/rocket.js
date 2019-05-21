@@ -47,15 +47,16 @@ function Rocket(name, img, x, y, width, height) {
 
         ctx.translate(x + width/2, y + height/2);
 
-        //var angle = Math.atan2(-dirY, -dirX);
+        var angle = Math.atan2(dirY, dirX);
 
-        var angle = Math.atan2(dirX, -dirY);
+        /*var angle = Math.atan2(dirX, -dirY);
         if (angle >= 0) {
             //angle = angle * (9 / Math.PI);
         } else {
             //angle = 4 + (4 + angle * (4 / Math.PI));
-         }
+         }*/
 
+        ctx.rotate(-Math.PI / 2);
 	    ctx.rotate(angle);
 
 	    ctx.translate(-x - width/2, -y - height/2);
