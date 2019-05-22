@@ -39,9 +39,9 @@ function Rocket(name, img, x, y, width, height) {
 //        }
     }
 
-    this.updateMovement = function() {
-        y = y - 4*dirY;
-        x = x - 4*dirX;
+    this.updateMovement = function(progress) {
+        y = y - (2*dirY*progress/1000);
+        x = x - (2*dirX*progress/1000);
     }
 
 	this.draw = function(ctx) {

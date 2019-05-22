@@ -4,17 +4,33 @@
 }
 
 .helper {
-    margin-top: 340px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     width: 500px;
     height: 200px;
     z-index: 3;
 
-    transform: translateX(-400px);
-
-    transition: transform .3s ease-out;
+    transition: transform .5s ease-out;
     display: inline-block;
 }
 
-.helper:hover {
+.helper-in {
     transform: translateX(0px);
+}
+
+.helper-out {
+    transform: translateX(-450px);
+}
+
+
+.image {
+
+position: relative; width: 100%;
+
+}
+
+h2 {
+
+position: absolute; top: 200px; left: 0; width: 100%;
+
 }
