@@ -6,10 +6,12 @@
 .helper {
     margin-top: 150px;
     margin-bottom: 150px;
-    width: 500px;
-    height: 200px;
+    color: white;
+    width:350px;
     z-index: 3;
-
+    margin-left: 1vw;
+    background-color: black;
+    border-radius: 15px; 
     transition: transform .5s ease-out;
     display: inline-block;
 }
@@ -24,7 +26,6 @@
 
 
 .image {
-
 position: relative; width: 100%;
 
 }
@@ -34,3 +35,36 @@ h2 {
 position: absolute; top: 200px; left: 0; width: 100%;
 
 }
+
+#logo{
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: inline-block;
+}
+
+#navigation{
+ margin-left: 1vw;
+ display: inline-block;
+}
+
+@media screen and (max-width: 768px) {      
+    #logo{      
+      background-image: url(../img/logo_min.svg);
+      width: 86px;
+      height: 70px;
+    } 
+} 
+@media screen and (min-width: 768px) {      
+    #logo{      
+      background-image: url(../img/logoLandscape_min.svg);
+      width: 304px;
+      height: 70px;
+    } 
+}
+@media (min-width: 1200px) {
+     #logo{         
+         background-image: url(../img/logoFull_min.svg);
+         width: 152px;
+         height: 120px;
+     }
