@@ -47,6 +47,10 @@ function Rocket(name, img, x, y, width, height) {
     this.updateMovement = function(progress) {
         y = y - (speed*dirY*progress/1000);
         x = x - (speed*dirX*progress/1000);
+
+        var boom = Math.sqrt(speed*dirY*progress/1000*speed*dirY*progress/1000 + speed*dirX*progress/1000*speed*dirX*progress/1000);
+
+        length = length - boom;
     }
 
     this.setSpeed = function() {
@@ -95,14 +99,19 @@ function Rocket(name, img, x, y, width, height) {
 	}
 
 	this.distance =  function(x2, y2) {
+	    if (length <= 30)
+	        return true;
+
         var a = x - x2;
         var b = y - y2;
 
-        var c = Math.sqrt(a*a + b*b);
+        return false;
+
+        /*var c = Math.sqrt(a*a + b*b);
         if (c < 30) {
             return true;
         } else {
             return false;
-        }
+        }*/
     }
 }
