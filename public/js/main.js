@@ -6,7 +6,7 @@ imgPath+'Earth planet.png',
 imgPath+'Luna planet.png',
 imgPath+'Mars planet.png',
 imgPath+'Venus planet.png',
-imgPath+'rocket.png'];
+imgPath+'Rocket.svg'];
 
 function initialize() {
     loadImages();

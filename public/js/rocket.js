@@ -70,7 +70,7 @@ function Rocket(name, img, x, y, width, height) {
 	}
 
 	this.updateView = function() {
-	    scrollWrapper(y-window.innerHeight/2+50, x-window.innerWidth/2+50);
+	    scrollWrapper(y-window.innerHeight/2+40, x-window.innerWidth/2+20);
 	}
 
 	this.rocketMovement = function(e) {

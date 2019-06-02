@@ -140,7 +140,7 @@ function visitPlanet(planet) {
 
         drawForeground();
 
-        if (rocketUserObj.distance(planet.offsetLeft + planet.width/2 - 50, planet.offsetTop + planet.height/2 - 50)) {
+        if (rocketUserObj.distance(planet.offsetLeft + planet.width/2 - 20, planet.offsetTop + planet.height/2 - 40)) {
             //clearInterval(updateLoop);
             console.log(updateLoop);
             window.cancelAnimationFrame(updateLoop);
@@ -152,7 +152,7 @@ function visitPlanet(planet) {
 
         updateLoop = window.requestAnimationFrame(update);
     }
-    rocketUserObj.moveTowards(planet.offsetLeft + planet.width/2 - 50, planet.offsetTop + planet.height/2 - 50);
+    rocketUserObj.moveTowards(planet.offsetLeft + planet.width/2 - 20, planet.offsetTop + planet.height/2 - 40);
     //updateLoop = setInterval(update, 30);
     updateLoop = window.requestAnimationFrame(update);
 }

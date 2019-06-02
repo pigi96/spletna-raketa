@@ -7,7 +7,7 @@ var rocketUserObj;
 function initForeground() {
     canvasForeground = document.getElementById("canvasForeground");
 
-    rocketUserObj = new Rocket('Rocket', loadedImages[imgPath+'rocket.png'], 2700, 1450, 100, 100);
+    rocketUserObj = new Rocket('Rocket', loadedImages[imgPath+'Rocket.svg'], 2700, 1450, 40, 80);
     rocketUserObj.updateView();
 }
 
