@@ -78,14 +78,19 @@ function initController() {
     neptune = document.getElementById("neptune");
     pluto = document.getElementById("pluto");
 
-        $("#move-left").click(function () {
-             if (updateLoop == null)
-                visitPlanetToLeft();
-        });
-        $("#move-right").click(function () {
-             if (updateLoop == null)
-                visitPlanetToRight();
-        });
+    window.onresize = function() {
+    console.log(window.innerWidth);
+        rocketUserObj.updateView();
+    }
+
+    $("#move-left").click(function () {
+         if (updateLoop == null)
+            visitPlanetToLeft();
+    });
+    $("#move-right").click(function () {
+         if (updateLoop == null)
+            visitPlanetToRight();
+    });
 }
       /*$("#earth-to-venus, #earth-to-venus1").click(function () {
       if (updateLoop == null)

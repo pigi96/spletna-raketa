@@ -63,10 +63,14 @@ function Rocket(name, img, x, y, width, height) {
 
 	    ctx.translate(-x - width/2, -y - height/2);
 
-        scrollWrapper(y-400, x-800);
+        this.updateView();
 	    ctx.drawImage(img, x, y, width, height);
 
         ctx.restore();
+	}
+
+	this.updateView = function() {
+	    scrollWrapper(y-window.innerHeight/2+50, x-window.innerWidth/2+50);
 	}
 
 	this.rocketMovement = function(e) {
