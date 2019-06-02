@@ -10,7 +10,17 @@
     margin: 0 0;
     position: absolute;
     z-index: 2;
+    -webkit-animation:spin 123s linear infinite;
 }
+
+.orbit {
+    padding: 0 0;
+    margin: 0 0;
+    position: absolute;
+    z-index: 3;
+}
+
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 
 .earth-to-venus {
     left: 1800px;
@@ -80,20 +90,37 @@
 }
 
 .saturn {
-    width: 475px;
-    height: 475px;
+    width: 275px;
+    height: 275px;
     display: inline;
-    left: 5235px;
+    left: 5290px;
     top: 800px;
 }
 
-.uranus {
-    width: 375px;
-    height: 375px;
+.saturn-orbit {
+    width: 522px;
+    height: 354px;
     display: inline;
-    left: 6030px;
+    left: 5171px;
+    top: 777px;
+}
+
+.uranus {
+    width: 275px;
+    height: 275px;
+    display: inline;
+    left: 6090px;
     top: 2100px;
 }
+
+.uranus-orbit {
+    width: 490px;
+    height: 256px;
+    display: inline;
+    left: 5980px;
+    top: 2120px;
+}
+
 
 .neptune {
     width: 250px;
