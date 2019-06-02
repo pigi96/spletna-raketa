@@ -153,6 +153,7 @@ function visitPlanet(planet) {
         updateLoop = window.requestAnimationFrame(update);
     }
     rocketUserObj.moveTowards(planet.offsetLeft + planet.width/2 - 20, planet.offsetTop + planet.height/2 - 40);
+
     //updateLoop = setInterval(update, 30);
     updateLoop = window.requestAnimationFrame(update);
 }

@@ -8,7 +8,8 @@ function Rocket(name, img, x, y, width, height) {
 
 	this.direction = 0;
 
-
+    this.speed = 4;
+    this.length = 4;
 
     this.dirX = 0;
     this.dirY = 0;
@@ -18,6 +19,10 @@ function Rocket(name, img, x, y, width, height) {
         dirY = y - dy;
 
         var sum = Math.sqrt(dirX*dirX + dirY*dirY);
+
+        length = sum;
+        speed = sum/300;
+
         if (sum != 0) {
             dirX /= sum;
             dirY /= sum;
@@ -40,8 +45,12 @@ function Rocket(name, img, x, y, width, height) {
     }
 
     this.updateMovement = function(progress) {
-        y = y - (2*dirY*progress/1000);
-        x = x - (2*dirX*progress/1000);
+        y = y - (speed*dirY*progress/1000);
+        x = x - (speed*dirX*progress/1000);
+    }
+
+    this.setSpeed = function() {
+
     }
 
 	this.draw = function(ctx) {
@@ -90,7 +99,7 @@ function Rocket(name, img, x, y, width, height) {
         var b = y - y2;
 
         var c = Math.sqrt(a*a + b*b);
-        if (c < 10) {
+        if (c < 30) {
             return true;
         } else {
             return false;
