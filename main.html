@@ -20,23 +20,24 @@
 
 <body onload="initialize()">
     <div id="container">
-        <canvas id="canvasBackground" width="4472px" height="3608px"
+        <canvas id="canvasBackground" width="9000px" height="3000px"
                 style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
-        <canvas id="canvasForeground" width="4472px" height="3608px"
+        <canvas id="canvasForeground" width="9000px" height="3000px"
                 style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
 
-        <img id="venus" class="planet venus zoom" src="public/img/Venus planet.png"/>
-
-        <img id="earth" class="planet earth zoom" src="public/img/Earth planet.png"/>
-        <img id="earth-to-venus" class="travel earth-to-venus zoom" src="public/img/Venus planet.png"/>
-        <img id="earth-to-luna" class="travel earth-to-luna zoom" src="public/img/Luna planet.png"/>
-        <img id="earth-to-mars" class="travel earth-to-mars zoom" src="public/img/Mars planet.png"/>
-        
-        <img id="luna" class="planet luna zoom" src="public/img/Luna planet.png"/>
-        
-        <img id="mars" class="planet mars zoom" src="public/img/Mars planet.png"/>
+        <img id="mercury" class="planet mercury zoom" src="public/img/Mercury planet.svg"/>
+        <img id="venus" class="planet venus zoom" src="public/img/Venus planet.svg"/>
+        <img id="earth" class="planet earth zoom" src="public/img/Earth planet.svg"/>
+        <img id="mars" class="planet mars zoom" src="public/img/Mars planet.svg"/>
+        <img id="jupiter" class="planet jupiter zoom" src="public/img/Jupiter planet.svg"/>
+        <img id="saturn" class="planet saturn zoom" src="public/img/Saturn planet.svg"/>
+        <img id="uranus" class="planet uranus zoom" src="public/img/Uranus planet.svg"/>
+        <img id="neptune" class="planet neptune zoom" src="public/img/Neptune planet.svg"/>
+        <img id="pluto" class="planet pluto zoom" src="public/img/Pluto planet.svg"/>
 
         <div class="ui">
+            <div id="move-left" class="helper">GO LEFT</div>
+            <div id="move-right" class="helper">GO RIGHT</div>
             <div class="image">
                 <img id="logo">
                 <!-- <img id="helper1" class="helper" src="public/img/helper.svg"> -->
@@ -47,7 +48,7 @@
                     </div>
                     <div id="navigation">
                         <div class="wrapTip">
-                            <img id="earth-to-venus1" class="travel earth-to-venus1 zoom" src="public/img/Venus planet.png"/> 
+                            <img id="earth-to-venus1" class="travel earth-to-venus1 zoom" src="public/img/Venus planet.png"/>
                              <span class="travelTo">Travel to Venus</span>
                         </div>
                         <div class="wrapTip">

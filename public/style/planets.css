@@ -12,22 +12,6 @@
     z-index: 2;
 }
 
-.venus {
-    width: 180px;
-    height: 180px;
-    display: inline;
-    left: 1100px;
-    top: 1100px;
-}
-
-.earth {
-    width: 200px;
-    height: 200px;
-    display: inline;
-    left: 1900px;
-    top: 1400px;
-}
-
 .earth-to-venus {
     left: 1800px;
     top: 1300px;
@@ -55,19 +39,74 @@
     left: 90px;
 }
 
-
-.luna {
-    width: 100px;
-    height: 100px;
+.mercury {
+    width: 160px;
+    height: 160px;
     display: inline;
-    left: 1400px;
-    top: 2300px;
+    left: 800px;
+    top: 1120px;
+}
+
+.venus {
+    width: 230px;
+    height: 230px;
+    display: inline;
+    left: 1700px;
+    top: 1625px;
+}
+
+.earth {
+    width: 240px;
+    height: 240px;
+    display: inline;
+    left: 2650px;
+    top: 1350px;
 }
 
 .mars {
-    width: 150px;
-    height: 150px;
+    width: 190px;
+    height: 190px;
     display: inline;
-    left: 2600px;
-    top: 1700px;
+    left: 3200px;
+    top: 600px;
+}
+
+.jupiter {
+    width: 400px;
+    height: 400px;
+    display: inline;
+    left: 4425px;
+    top: 1600px;
+}
+
+.saturn {
+    width: 475px;
+    height: 475px;
+    display: inline;
+    left: 5235px;
+    top: 800px;
+}
+
+.uranus {
+    width: 375px;
+    height: 375px;
+    display: inline;
+    left: 6030px;
+    top: 2100px;
+}
+
+.neptune {
+    width: 250px;
+    height: 250px;
+    display: inline;
+    left: 7250px;
+    top: 1300px;
+}
+
+.pluto {
+    width: 130px;
+    height: 130px;
+    display: inline;
+    left: 7950px;
+    top: 700px;
 }

@@ -1,7 +1,7 @@
 var loadedImages;
 var imgPath = 'public/img/';
 
-var images = [imgPath+'universe.jpg',
+var images = [imgPath+'background.svg',
 imgPath+'Earth planet.png',
 imgPath+'Luna planet.png',
 imgPath+'Mars planet.png',

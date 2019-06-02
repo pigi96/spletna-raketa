@@ -1,12 +1,12 @@
 var canvasBackground;
 
 // keep image references below
-var backgroundImg;
+var backgroundImg, backgroundStarsImg;
 
 function initBackground() {
     canvasBackground = document.getElementById("canvasBackground");
 
-    backgroundImg = loadedImages[imgPath+'universe.jpg'];
+    backgroundImg = loadedImages[imgPath+'background.svg'];
 }
 
 function drawBackground() {

@@ -6,9 +6,6 @@ body {
     overflow: hidden;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
-}
 
 .zoom {
   padding: 50px;
