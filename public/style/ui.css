@@ -96,8 +96,29 @@ border-style: solid;
     display: inline-block;
 }
 
+.helperNavigation {
+    padding:10px;
+    color: white;
+    width: 800px;
+    height: 10vh;
+    left:15vw;
+    z-index: 3;
+    position: relative;
+    top: 1vh;
+    margin-left: 1vw;
+    background-color: transparent;
+    border-radius: 15px; 
+    transition: transform .85s ease-out;
+    display: inline-block;
+}
 
+.helperNavigation-in {
+    transform: translateY(0vw);
+}
 
+.helperNavigation-out {
+    transform: translateY(-50vw);
+}
 
 .helperDescription-in {
     transform: translateX(0vw);

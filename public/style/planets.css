@@ -137,3 +137,87 @@
     left: 7950px;
     top: 700px;
 }
+
+.mercury1 {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    left: 10px;
+    top: 20px;
+}
+.venus1 {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    left: 100px;
+    top: 20px;
+}
+.earth1 {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    left: 190px;
+    top: 20px;
+}
+.mars1 {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    left: 280px;
+    top: 20px;
+}
+.jupiter1 {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    left: 370px;
+    top: 20px;
+}
+.saturn1 {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    left: 460px;
+    top: 20px;
+}
+
+.saturn-orbit1 {
+    width: 120px;
+    height: 65px;
+    display: inline;
+    left: 426px;
+    top: 16px;
+}
+
+.uranus1 {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    left: 550px;
+    top: 20px;
+}
+
+.uranus-orbit1 {
+    width: 90px;
+    height: 60px;
+    display: inline;
+    left: 530px;
+    top: 18px;
+}
+
+
+.neptune1 {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    left: 640px;
+    top: 20px;
+}
+
+.pluto1 {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    left: 730px;
+    top: 20px;
+}

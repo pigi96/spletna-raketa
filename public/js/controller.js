@@ -130,6 +130,124 @@ function initController() {
         rocketUserObj.updateView();
     }
 
+      $("#mercury1").click(function(){
+        currentPos = 0;
+         document.getElementById("helperDesc").classList.add("helperDescription-out");
+          document.getElementById("helperDesc").classList.remove("helperDescription-in");
+          document.getElementById("helperVid").classList.add("helperVideo-out");
+          document.getElementById("helperVid").classList.remove("helperVideo-in");
+          document.getElementById("helperStats").classList.add("helperStatistics-out");
+          document.getElementById("helperStats").classList.remove("helperStatistics-in");
+          document.getElementById("helperNav").classList.add("helperNavigation-out");
+          document.getElementById("helperNav").classList.remove("helperNavigation-in");
+            visitPlanet(mercury);
+            setContent(mercury);
+    });
+    $("#venus1").click(function(){
+      currentPos = 1;
+         document.getElementById("helperDesc").classList.add("helperDescription-out");
+          document.getElementById("helperDesc").classList.remove("helperDescription-in");
+          document.getElementById("helperVid").classList.add("helperVideo-out");
+          document.getElementById("helperVid").classList.remove("helperVideo-in");
+          document.getElementById("helperStats").classList.add("helperStatistics-out");
+          document.getElementById("helperStats").classList.remove("helperStatistics-in");
+          document.getElementById("helperNav").classList.add("helperNavigation-out");
+          document.getElementById("helperNav").classList.remove("helperNavigation-in");
+            visitPlanet(venus);
+            setContent(venus);
+    });
+    $("#earth1").click(function(){
+      currentPos = 2;
+         document.getElementById("helperDesc").classList.add("helperDescription-out");
+          document.getElementById("helperDesc").classList.remove("helperDescription-in");
+          document.getElementById("helperVid").classList.add("helperVideo-out");
+          document.getElementById("helperVid").classList.remove("helperVideo-in");
+          document.getElementById("helperStats").classList.add("helperStatistics-out");
+          document.getElementById("helperStats").classList.remove("helperStatistics-in");
+          document.getElementById("helperNav").classList.add("helperNavigation-out");
+          document.getElementById("helperNav").classList.remove("helperNavigation-in");
+            visitPlanet(earth);
+            setContent(earth);
+    });
+    $("#mars1").click(function(){
+      currentPos = 3;
+         document.getElementById("helperDesc").classList.add("helperDescription-out");
+          document.getElementById("helperDesc").classList.remove("helperDescription-in");
+          document.getElementById("helperVid").classList.add("helperVideo-out");
+          document.getElementById("helperVid").classList.remove("helperVideo-in");
+          document.getElementById("helperStats").classList.add("helperStatistics-out");
+          document.getElementById("helperStats").classList.remove("helperStatistics-in");
+          document.getElementById("helperNav").classList.add("helperNavigation-out");
+          document.getElementById("helperNav").classList.remove("helperNavigation-in");
+            visitPlanet(mars);
+            setContent(mars);
+    });
+    $("#jupiter1").click(function(){
+      currentPos = 4;
+         document.getElementById("helperDesc").classList.add("helperDescription-out");
+          document.getElementById("helperDesc").classList.remove("helperDescription-in");
+          document.getElementById("helperVid").classList.add("helperVideo-out");
+          document.getElementById("helperVid").classList.remove("helperVideo-in");
+          document.getElementById("helperStats").classList.add("helperStatistics-out");
+          document.getElementById("helperStats").classList.remove("helperStatistics-in");
+          document.getElementById("helperNav").classList.add("helperNavigation-out");
+          document.getElementById("helperNav").classList.remove("helperNavigation-in");
+            visitPlanet(jupiter);
+            setContent(jupiter);
+    });
+    $("#saturn-orbit1").click(function(){
+      currentPos = 5;
+         document.getElementById("helperDesc").classList.add("helperDescription-out");
+          document.getElementById("helperDesc").classList.remove("helperDescription-in");
+          document.getElementById("helperVid").classList.add("helperVideo-out");
+          document.getElementById("helperVid").classList.remove("helperVideo-in");
+          document.getElementById("helperStats").classList.add("helperStatistics-out");
+          document.getElementById("helperStats").classList.remove("helperStatistics-in");
+          document.getElementById("helperNav").classList.add("helperNavigation-out");
+          document.getElementById("helperNav").classList.remove("helperNavigation-in");
+            visitPlanet(saturn);
+            setContent(saturn);
+    });
+    $("#uranus-orbit1").click(function(){
+      currentPos = 6;
+         document.getElementById("helperDesc").classList.add("helperDescription-out");
+          document.getElementById("helperDesc").classList.remove("helperDescription-in");
+          document.getElementById("helperVid").classList.add("helperVideo-out");
+          document.getElementById("helperVid").classList.remove("helperVideo-in");
+          document.getElementById("helperStats").classList.add("helperStatistics-out");
+          document.getElementById("helperStats").classList.remove("helperStatistics-in");
+          document.getElementById("helperNav").classList.add("helperNavigation-out");
+          document.getElementById("helperNav").classList.remove("helperNavigation-in");
+            visitPlanet(uranus);
+            setContent(uranus);
+    });
+    $("#neptune1").click(function(){
+      currentPos = 7;
+         document.getElementById("helperDesc").classList.add("helperDescription-out");
+          document.getElementById("helperDesc").classList.remove("helperDescription-in");
+          document.getElementById("helperVid").classList.add("helperVideo-out");
+          document.getElementById("helperVid").classList.remove("helperVideo-in");
+          document.getElementById("helperStats").classList.add("helperStatistics-out");
+          document.getElementById("helperStats").classList.remove("helperStatistics-in");
+          document.getElementById("helperNav").classList.add("helperNavigation-out");
+          document.getElementById("helperNav").classList.remove("helperNavigation-in");
+            visitPlanet(neptune);
+            setContent(neptune);
+    });
+    $("#pluto1").click(function(){
+      currentPos = 8;
+         document.getElementById("helperDesc").classList.add("helperDescription-out");
+          document.getElementById("helperDesc").classList.remove("helperDescription-in");
+          document.getElementById("helperVid").classList.add("helperVideo-out");
+          document.getElementById("helperVid").classList.remove("helperVideo-in");
+          document.getElementById("helperStats").classList.add("helperStatistics-out");
+          document.getElementById("helperStats").classList.remove("helperStatistics-in");
+          document.getElementById("helperNav").classList.add("helperNavigation-out");
+          document.getElementById("helperNav").classList.remove("helperNavigation-in");
+            visitPlanet(pluto);
+            setContent(pluto);
+    });
+
     $("#move-left").click(function () {
          if (updateLoop == null) {
          if (currentPos == 0)
@@ -140,6 +258,8 @@ function initController() {
           document.getElementById("helperVid").classList.remove("helperVideo-in");
           document.getElementById("helperStats").classList.add("helperStatistics-out");
           document.getElementById("helperStats").classList.remove("helperStatistics-in");
+          document.getElementById("helperNav").classList.add("helperNavigation-out");
+          document.getElementById("helperNav").classList.remove("helperNavigation-in");
             visitPlanetToLeft();
             }
     });
@@ -153,6 +273,8 @@ function initController() {
           document.getElementById("helperVid").classList.remove("helperVideo-in");
           document.getElementById("helperStats").classList.add("helperStatistics-out");
           document.getElementById("helperStats").classList.remove("helperStatistics-in");
+          document.getElementById("helperNav").classList.add("helperNavigation-out");
+          document.getElementById("helperNav").classList.remove("helperNavigation-in");
             visitPlanetToRight();
             }
     });
@@ -220,6 +342,9 @@ function visitPlanet(planet) {
             document.getElementById("helperVid").classList.remove("helperVideo-out");
             document.getElementById("helperStats").classList.add("helperStatistics-in");
             document.getElementById("helperStats").classList.remove("helperStatistics-out");
+            document.getElementById("helperNav").classList.add("helperNavigation-in");
+            document.getElementById("helperNav").classList.remove("helperNavigation-out");
+
             return;
         }
 
