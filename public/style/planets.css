@@ -149,42 +149,42 @@
     width: 50px;
     height: 50px;
     display: inline;
-    left: 5vh;
+    left: 10vw;
     top: 20px;
 }
 .venus1 {
     width: 50px;
     height: 50px;
     display: inline;
-    left: 15vh;
+    left: 20vw;
     top: 20px;
 }
 .earth1 {
     width: 50px;
     height: 50px;
     display: inline;
-    left: 25vh;
+    left: 30vw;
     top: 20px;
 }
 .mars1 {
     width: 50px;
     height: 50px;
     display: inline;
-    left: 280px;
+    left: 40vw;
     top: 20px;
 }
 .jupiter1 {
     width: 50px;
     height: 50px;
     display: inline;
-    left: 35vh;
+    left: 50vw;
     top: 20px;
 }
 .saturn1 {
     width: 50px;
     height: 50px;
     display: inline;
-    left: 45vh;
+    left: 60vw;
     top: 20px;
 }
 
@@ -192,7 +192,7 @@
     width: 50px;
     height: 50px;
     display: inline;
-    left: 55vh;
+    left: 70vw;
     top: 20px;
 }
 
@@ -200,7 +200,7 @@
     width: 50px;
     height: 50px;
     display: inline;
-    left: 65vh;
+    left: 80vw;
     top: 20px;
 }
 
@@ -208,6 +208,6 @@
     width: 50px;
     height: 50px;
     display: inline;
-    left: 75vh;
+    left: 90vw;
     top: 20px;
 }

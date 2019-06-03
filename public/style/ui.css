@@ -130,7 +130,6 @@ border-style: solid;
     z-index: 3;
     position: absolute;
     top: 65vh;
-    left: 20vw;
     background-color: transparent;
     border-radius: 15px;
     transition: transform .85s ease-out;
@@ -139,16 +138,14 @@ border-style: solid;
 
 .helperNavigation {
     border-style: solid;
-      border-width: 5px;
-      border-color: #a6a6a6;
+    border-width: 5px;
+    border-color: #a6a6a6;
     padding:10px;
     color: white;
-    width: 800px;
-    height: 10vh;
+    width: 97vw;
+    height: 9vh;
     z-index: 3;
-    position: relative;
-    top: 1vh;
-    left: 20vw;
+    position: absolute;
     border-radius: 15px; 
     transition: transform .85s ease-out;
     display: inline-block;
@@ -198,10 +195,11 @@ position: absolute; top: 200px; left: 0; width: 100%;
 }
 
 #logo{
-    left: 0;
-    top: 0;
+    right: 10vw;
+    bottom: 5vh;
     position: fixed;
     display: inline-block;
+    z-index: 4;
 }
 
 #navigation{
@@ -234,21 +232,21 @@ position: absolute; top: 200px; left: 0; width: 100%;
 
 @media screen and (max-width: 768px) {      
     #logo{      
-      background-image: url(../img/logo_min.svg);
+      background-image: url(../img/logo.svg);
       width: 86px;
       height: 70px;
     } 
 } 
 @media screen and (min-width: 768px) {      
     #logo{      
-      background-image: url(../img/logoLandscape_min.svg);
+      background-image: url(../img/logoLandscape.svg);
       width: 304px;
       height: 70px;
     } 
 }
 @media (min-width: 1200px) {
      #logo{         
-         background-image: url(../img/logoFull_min.svg);
+         background-image: url(../img/logoFull.svg);
          width: 152px;
          height: 120px;
      }
