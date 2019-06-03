@@ -132,7 +132,7 @@ function initController() {
     }
 
     $("#move-left").click(function () {
-         if (updateLoop == null)
+         if (updateLoop == null) {
           document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
           document.getElementById("helperVid").classList.add("helperVideo-out");
@@ -140,9 +140,10 @@ function initController() {
           document.getElementById("helperStats").classList.add("helperStatistics-out");
           document.getElementById("helperStats").classList.remove("helperStatistics-in");
             visitPlanetToLeft();
+            }
     });
     $("#move-right").click(function () {
-         if (updateLoop == null)
+         if (updateLoop == null) {
           document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
           document.getElementById("helperVid").classList.add("helperVideo-out");
@@ -150,6 +151,7 @@ function initController() {
           document.getElementById("helperStats").classList.add("helperStatistics-out");
           document.getElementById("helperStats").classList.remove("helperStatistics-in");
             visitPlanetToRight();
+            }
     });
 }
       /*$("#earth-to-venus, #earth-to-venus1").click(function () {
