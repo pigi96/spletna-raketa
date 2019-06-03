@@ -13,6 +13,13 @@
     -webkit-animation:spin 123s linear infinite;
 }
 
+.planet1 {
+    padding: 0 0;
+    margin: 0 0;
+    position: absolute;
+    z-index: 2;
+}
+
 .orbit {
     padding: 0 0;
     margin: 0 0;
@@ -142,21 +149,21 @@
     width: 50px;
     height: 50px;
     display: inline;
-    left: 10px;
+    left: 5vh;
     top: 20px;
 }
 .venus1 {
     width: 50px;
     height: 50px;
     display: inline;
-    left: 100px;
+    left: 15vh;
     top: 20px;
 }
 .earth1 {
     width: 50px;
     height: 50px;
     display: inline;
-    left: 190px;
+    left: 25vh;
     top: 20px;
 }
 .mars1 {
@@ -170,14 +177,14 @@
     width: 50px;
     height: 50px;
     display: inline;
-    left: 370px;
+    left: 35vh;
     top: 20px;
 }
 .saturn1 {
     width: 50px;
     height: 50px;
     display: inline;
-    left: 460px;
+    left: 45vh;
     top: 20px;
 }
 
@@ -185,7 +192,7 @@
     width: 50px;
     height: 50px;
     display: inline;
-    left: 550px;
+    left: 55vh;
     top: 20px;
 }
 
@@ -193,7 +200,7 @@
     width: 50px;
     height: 50px;
     display: inline;
-    left: 640px;
+    left: 65vh;
     top: 20px;
 }
 
@@ -201,6 +208,6 @@
     width: 50px;
     height: 50px;
     display: inline;
-    left: 730px;
+    left: 75vh;
     top: 20px;
 }
