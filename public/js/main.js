@@ -20,6 +20,10 @@ function initializeAfterLoad() {
 
     drawBackground();
     drawForeground();
+
+    document.getElementById("description").innerHTML = earthDescription;
+    document.getElementById("video").src = earthVideo;
+    document.getElementById("statistics").innerHTML = earthStatistics;
 }
 function loadImages() {
 

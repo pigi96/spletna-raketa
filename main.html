@@ -38,17 +38,13 @@
         <img id="pluto" class="planet pluto" src="public/img/Pluto planet.svg"/>
 
         <div class="ui">
-            <div id="move-left" class="helper">GO LEFT</div>
-            <div id="move-right" class="helper">GO RIGHT</div>
-            <div class="image">
+            <div id="move-left" class="helper1">GO LEFT</div>
+            <div id="move-right" class="helper2">GO RIGHT</div>
                 <img id="logo">
                 <!-- <img id="helper1" class="helper" src="public/img/helper.svg"> -->
-                <div class="helper helper-out" id="helper1">
+                <div class="helperDescription" id="helperDesc">
                     <div id="description"></div>
-                    <div class="embed-responsive embed-responsive-16by9">
-                    <iframe  id="video" class="embed-responsive-item" src="" style="height: 70%;width: 90%; margin: 0;"allowfullscreen></iframe>
-                    </div>
-                    <div id="navigation">
+                    <!-- <div id="navigation">
                         <div class="wrapTip">
                             <img id="earth-to-venus1" class="travel earth-to-venus1 zoom" src="public/img/Venus planet.png"/>
                              <span class="travelTo">Travel to Venus</span>
@@ -61,9 +57,16 @@
                             <img id="earth-to-mars1" class="travel earth-to-mars1 zoom" src="public/img/Mars planet.png"/>
                             <span class="travelTo">Travel to Mars</span>
                         </div>
+                    </div> -->
+                </div>
+                <div class= "helperVideo" id= "helperVid">
+                      <div class="embed-responsive embed-responsive-16by9">
+                    <iframe  id="video" class="embed-responsive-item" src="" style="height: 240px;width: 426px; margin: 0;"allowfullscreen></iframe>
                     </div>
                 </div>
-            </div>
+                <div class="helperStatistics" id= "helperStats">
+                    <div id=statistics></div>
+                </div>
         </div>
     </div>
 

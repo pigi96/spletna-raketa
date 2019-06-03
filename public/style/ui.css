@@ -2,13 +2,26 @@
     position: fixed;
     z-index: 3;
 }
-
-.helper {
-    margin-top: 150px;
-    margin-bottom: 150px;
+.helper1 {
     color: white;
     width:350px;
+    left:0;
     z-index: 3;
+    position: absolute;
+    top: 15vh;
+    margin-left: 1vw;
+    background-color: black;
+    border-radius: 15px; 
+    transition: transform .5s ease-out;
+    display: inline-block;
+}
+.helper2 {
+    color: white;
+    width:350px;
+    left: 20vw;
+    z-index: 3;
+    position: absolute;
+    top: 15vh;
     margin-left: 1vw;
     background-color: black;
     border-radius: 15px; 
@@ -16,28 +29,76 @@
     display: inline-block;
 }
 
-.helper33 {
-    margin-top: 300px;
-    margin-bottom: 300px;
+.helperDescription {
+    padding:10px;
+    color: white;
+    font-size: 1.2vw;
+    width:350px;
+    left:0;
+    z-index: 3;
+    position: absolute;
+    top: 20vh;
+    margin-left: 1vw;
+    background-color: black;
+    border-radius: 15px; 
+    transition: transform .5s ease-out;
+    display: inline-block;
+}
+
+.helperStatistics {
+    padding: 10px;
     color: white;
     width:350px;
-    height:350px;
+    height:250px;
     z-index: 3;
-    margin-left: 1vw;
+    left: 70vw;
+    top: 20vh;
+    position: absolute;
+    margin-right: 1vw;
     background-color: black;
     border-radius: 15px;
     transition: transform .5s ease-out;
     display: inline-block;
 }
 
-.helper-in {
+.helperVideo {
+    color: white;
+    z-index: 3;
+    position: absolute;
+    top: 60vh;
+    margin-left: 15vw;
+    background-color: transparent;
+    border-radius: 15px;
+    transition: transform .5s ease-out;
+    display: inline-block;
+}
+
+
+
+
+.helperDescription-in {
     transform: translateX(0px);
 }
 
-.helper-out {
+.helperDescription-out {
     transform: translateX(-450px);
 }
 
+.helperStatistics-in {
+    transform: translateX(0px);
+}
+
+.helperStatistics-out {
+    transform: translateX(500px);
+}
+
+.helperVideo-in {
+    transform: translateX(0px);
+}
+
+.helperVideo-out {
+    transform: translateX(-700px);
+}
 
 .image {
 position: relative; width: 100%;
