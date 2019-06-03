@@ -192,7 +192,11 @@ function initController() {
       });
     });*/
 
-
+window.requestAnimationFrame =
+           window.requestAnimationFrame ||
+           window.mozRequestAnimationFrame ||
+           window.webkitRequestAnimationFrame ||
+           window.msRequestAnimationFrame;
 
 var updateLoop = null;
 function visitPlanet(planet) {
@@ -208,7 +212,7 @@ function visitPlanet(planet) {
         if (rocketUserObj.distance(planet.offsetLeft + planet.width/2 - 20, planet.offsetTop + planet.height/2 - 40)) {
             //clearInterval(updateLoop);
             console.log(updateLoop);
-            window.cancelAnimationFrame(updateLoop);
+            cancelAnimationFrame(updateLoop);
             updateLoop = null;
             document.getElementById("helperDesc").classList.add("helperDescription-in");
             document.getElementById("helperDesc").classList.remove("helperDescription-out");
@@ -219,7 +223,7 @@ function visitPlanet(planet) {
             return;
         }
 
-        updateLoop = window.requestAnimationFrame(update);
+        updateLoop = requestAnimationFrame(update);
     }
     rocketUserObj.moveTowards(planet.offsetLeft + planet.width/2 - 20, planet.offsetTop + planet.height/2 - 40);
 

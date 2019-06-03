@@ -30,38 +30,48 @@
 }
 
 .helperDescription {
+border-style: solid;
+  border-width: 5px;
+  border-color: #cccccc;
     padding:10px;
     color: white;
-    font-size: 1.2vw;
+    font-size: 1vw;
     width:350px;
     left:5vw;
     z-index: 3;
     position: absolute;
     top: 17vh;
     margin-left: 1vw;
-    background-color: black;
+    background-color: #cc5200;
     border-radius: 15px; 
     transition: transform .5s ease-out;
     display: inline-block;
 }
 
 .helperStatistics {
+border-style: solid;
+  border-width: 5px;
+  border-color: #cccccc;
     padding: 10px;
     color: white;
     width:350px;
     height:250px;
     z-index: 3;
+    font-size: 1vw;
     left: 70vw;
-    top: 20vh;
+    top: 30vh;
     position: absolute;
     margin-right: 1vw;
-    background-color: black;
+    background-color: #cc5200;
     border-radius: 15px;
     transition: transform .85s ease-out;
     display: inline-block;
 }
 
 .helperVideo {
+border-style: solid;
+  border-width: 5px;
+  border-color: #a6a6a6;
     color: white;
     z-index: 3;
     position: absolute;
