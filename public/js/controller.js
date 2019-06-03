@@ -127,12 +127,13 @@ function initController() {
     pluto = document.getElementById("pluto");
 
     window.onresize = function() {
-    console.log(window.innerWidth);
         rocketUserObj.updateView();
     }
 
     $("#move-left").click(function () {
          if (updateLoop == null) {
+         if (currentPos == 0)
+            return;
           document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
           document.getElementById("helperVid").classList.add("helperVideo-out");
@@ -144,6 +145,8 @@ function initController() {
     });
     $("#move-right").click(function () {
          if (updateLoop == null) {
+         if (currentPos == 8)
+            return;
           document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
           document.getElementById("helperVid").classList.add("helperVideo-out");
