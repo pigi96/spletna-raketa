@@ -57,7 +57,7 @@
     margin-right: 1vw;
     background-color: black;
     border-radius: 15px;
-    transition: transform .5s ease-out;
+    transition: transform .85s ease-out;
     display: inline-block;
 }
 
@@ -69,7 +69,7 @@
     margin-left: 15vw;
     background-color: transparent;
     border-radius: 15px;
-    transition: transform .5s ease-out;
+    transition: transform .85s ease-out;
     display: inline-block;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .helperDescription-out {
-    transform: translateX(-450px);
+    transform: translateX(-50vw);
 }
 
 .helperStatistics-in {
@@ -89,7 +89,7 @@
 }
 
 .helperStatistics-out {
-    transform: translateX(500px);
+    transform: translateX(50vw);
 }
 
 .helperVideo-in {
@@ -97,7 +97,7 @@
 }
 
 .helperVideo-out {
-    transform: translateX(-700px);
+    transform: translateX(-50vw);
 }
 
 .image {
