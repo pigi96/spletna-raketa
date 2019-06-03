@@ -195,7 +195,7 @@ function initController() {
             visitPlanet(jupiter);
             setContent(jupiter);
     });
-    $("#saturn-orbit1").click(function(){
+    $("#saturn1").click(function(){
       currentPos = 5;
          document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
@@ -208,7 +208,7 @@ function initController() {
             visitPlanet(saturn);
             setContent(saturn);
     });
-    $("#uranus-orbit1").click(function(){
+    $("#uranus1").click(function(){
       currentPos = 6;
          document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
@@ -235,7 +235,7 @@ function initController() {
             setContent(neptune);
     });
     $("#pluto1").click(function(){
-      currentPos = 8;
+          currentPos = 8;
          document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
           document.getElementById("helperVid").classList.add("helperVideo-out");
