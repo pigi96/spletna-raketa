@@ -5,41 +5,58 @@
 .helper1 {
     border-style: solid;
       border-width: 2px;
-      border-color: #cccccc;
+      border-color: white;
       border-radius: 250px;
-    color: white;
-    width:100px;
-    height:60px;
+    color: black;
+    width:120px;
+    height:auto;
     left: 40vw;
-    text-size: 30px;
+    font-size: 20px;
     z-index: 3;
     position: absolute;
-    top: 15vh;
-    background-color: #cc5200;
+    font-weight: bold;
+    top: 30vh;
+    background-color: #cccccc;
     border-radius: 15px; 
     transition: transform .5s ease-out;
     display: inline-block;
     text-align: center;
 }
+
+.helper1:hover {
+  background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
 .helper2 {
     border-style: solid;
           border-width: 2px;
-          border-color: #cccccc;
+          border-color: white;
           border-radius: 250px;
 
-    color: white;
-    width:350px;
-    left: 50vw;
+    color: black;
+    width:120px;
+    height:auto;
+    left: 55vw;
     z-index: 3;
-    text-size: 20px;
+    font-size: 20px;
+    font-weight: bold;
         z-index: 3;
     position: absolute;
-    top: 15vh;
+    top: 30vh;
     margin-left: 1vw;
-    background-color: #cc5200;
+    background-color: #cccccc;
     border-radius: 15px; 
     transition: transform .5s ease-out;
     display: inline-block;
+    text-align: center;
+}
+
+.helper2:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 .helperColorMercury {
@@ -89,7 +106,7 @@ border-style: solid;
     color: white;
     font-size: 17px;
     width:350px;
-    left:5vw;
+    left:4vw;
     z-index: 3;
     position: absolute;
     top: 17vh;
@@ -113,7 +130,7 @@ border-style: solid;
     height:250px;
     z-index: 3;
     font-size: 15px;
-    left: 70vw;
+    left: 71vw;
     top: 30vh;
     position: absolute;
     margin-right: 1vw;
@@ -130,6 +147,7 @@ border-style: solid;
     z-index: 3;
     position: absolute;
     top: 65vh;
+    left: 19vw;
     background-color: transparent;
     border-radius: 15px;
     transition: transform .85s ease-out;
@@ -142,7 +160,8 @@ border-style: solid;
     border-color: #a6a6a6;
     padding:10px;
     color: white;
-    width: 97vw;
+    width: 102vw;
+    left: -2vw;
     height: 9vh;
     z-index: 3;
     position: absolute;

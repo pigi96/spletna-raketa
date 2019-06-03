@@ -327,6 +327,8 @@ window.requestAnimationFrame =
 var updateLoop = null;
 function visitPlanet(planet) {
     var start = null;
+$("#move-left").fadeOut();
+$("#move-right").fadeOut();
     function update(timestamp) {
         if (!start) start = timestamp;
         var progress = timestamp - start;
@@ -340,6 +342,9 @@ function visitPlanet(planet) {
             console.log(updateLoop);
             cancelAnimationFrame(updateLoop);
             updateLoop = null;
+
+            $("#move-left").fadeIn();
+            $("#move-right").fadeIn();
 
             document.getElementById("helperDesc").classList.remove("helperColorMercury", "helperColorVenus", "helperColorEarth", "helperColorMars", "helperColorJupiter", "helperColorSaturn", "helperColorUranus", "helperColorNeptune", "helperColorPluto");
             document.getElementById("helperStats").classList.remove("helperColorMercury", "helperColorVenus", "helperColorEarth", "helperColorMars", "helperColorJupiter", "helperColorSaturn", "helperColorUranus", "helperColorNeptune", "helperColorPluto");
