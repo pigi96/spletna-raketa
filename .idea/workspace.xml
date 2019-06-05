@@ -4,71 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/public/js/background.js" line="14" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ace4a205-66a2-4595-bcaa-90af95bb334e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/idea.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1x/Earth tab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1x/Luna tab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1x/Mars tab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1x/Venus tab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/SVG/helper.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/1/14636.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/1/14636.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/1/License free.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/1/License premium.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/2/12725.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/2/12725.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/2/License free.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/2/License premium.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/3/14637.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/3/14637.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/3/License free.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/3/License premium.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/4/14756.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/4/14756.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/4/License free.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/4/License premium.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/5/14755.eps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/5/14755.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/5/License free.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/5/License premium.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/examples/ui exa.ai" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1x/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/1x/Asset 5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/1x/Asset 6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/1x/Asset 9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/1x/Jupiter planet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/1x/Mars planet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/1x/Mercury planet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/1x/Neptune planet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/1x/Pluto planet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/1x/Saturn planet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/1x/Uranus planet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/1x/Venus planet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/SVG/Earth planet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/SVG/Jupiter planet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/SVG/Mars planet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/SVG/Mercury planet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/SVG/Neptune planet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/SVG/Pluto planet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/SVG/Rocket.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/SVG/Saturn orbit.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/SVG/Saturn planet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/SVG/Uranus orbit.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/SVG/Uranus planet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/SVG/Venus planet.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/background.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/SVG/stars.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/foreground.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/foreground.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style/planets.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style/planets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style/ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/style/ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svgTest.html" beforeDir="false" />
-    </list>
+    <list default="true" id="ace4a205-66a2-4595-bcaa-90af95bb334e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +232,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12846482" />

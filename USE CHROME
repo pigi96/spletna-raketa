@@ -1,0 +1,1 @@
+Use chrome because canvas uses rendering with SVG which other browsers have weird support for.
