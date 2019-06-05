@@ -12,6 +12,26 @@ function initialize() {
     loadImages();
 }
 
+var imagesLoaded = false;
+var enable = false;
+
+$(document).ready(function() {
+
+    setTimeout(function(){
+        enable = true;
+        if (imagesLoaded) {
+            $('body').addClass('loaded');
+        }
+    }, 2000);
+
+    setTimeout(function(){
+        if (imagesLoaded) {
+            $('body').addClass('loaded');
+        }
+    }, 9999);
+
+});
+
 function initializeAfterLoad() {
     initController();
 
@@ -26,7 +46,6 @@ function initializeAfterLoad() {
     document.getElementById("statistics").innerHTML = earthStatistics;
 }
 function loadImages() {
-
     loadedImages = {};
     var promiseArray = images.map(function(imgurl){
        var prom = new Promise(function(resolve,reject){
@@ -41,4 +60,7 @@ function loadImages() {
     });
 
     Promise.all(promiseArray).then(initializeAfterLoad);
+    imagesLoaded = true;
+    if (enable)
+        $('body').addClass('loaded');
 }
