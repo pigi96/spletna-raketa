@@ -135,6 +135,7 @@ function initController() {
     }
 
       $("#mercury1").click(function(){
+      if (currentPos == 0) return;
         currentPos = 0;
          document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
@@ -148,6 +149,7 @@ function initController() {
             setContent(mercury);
     });
     $("#venus1").click(function(){
+    if (currentPos == 1) return;
       currentPos = 1;
          document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
@@ -161,6 +163,7 @@ function initController() {
             setContent(venus);
     });
     $("#earth1").click(function(){
+    if (currentPos == 2) return;
       currentPos = 2;
          document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
@@ -174,6 +177,7 @@ function initController() {
             setContent(earth);
     });
     $("#mars1").click(function(){
+    if (currentPos == 3) return;
       currentPos = 3;
          document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
@@ -187,6 +191,7 @@ function initController() {
             setContent(mars);
     });
     $("#jupiter1").click(function(){
+    if (currentPos == 4) return;
       currentPos = 4;
          document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
@@ -200,6 +205,7 @@ function initController() {
             setContent(jupiter);
     });
     $("#saturn1").click(function(){
+    if (currentPos == 5) return;
       currentPos = 5;
          document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
@@ -213,6 +219,7 @@ function initController() {
             setContent(saturn);
     });
     $("#uranus1").click(function(){
+    if (currentPos == 6) return;
       currentPos = 6;
          document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
@@ -226,6 +233,7 @@ function initController() {
             setContent(uranus);
     });
     $("#neptune1").click(function(){
+    if (currentPos == 7) return;
       currentPos = 7;
          document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
@@ -239,6 +247,7 @@ function initController() {
             setContent(neptune);
     });
     $("#pluto1").click(function(){
+    if (currentPos == 8) return;
           currentPos = 8;
          document.getElementById("helperDesc").classList.add("helperDescription-out");
           document.getElementById("helperDesc").classList.remove("helperDescription-in");
@@ -327,6 +336,7 @@ window.requestAnimationFrame =
 var updateLoop = null;
 function visitPlanet(planet) {
     var start = null;
+
 $("#move-left").fadeOut();
 $("#move-right").fadeOut();
     function update(timestamp) {
@@ -343,49 +353,71 @@ $("#move-right").fadeOut();
             cancelAnimationFrame(updateLoop);
             updateLoop = null;
 
-            $("#move-left").fadeIn();
-            $("#move-right").fadeIn();
+            if (currentPos != 0)
+                $("#move-left").fadeIn();
+            if (currentPos != 8)
+                $("#move-right").fadeIn();
 
             document.getElementById("helperDesc").classList.remove("helperColorMercury", "helperColorVenus", "helperColorEarth", "helperColorMars", "helperColorJupiter", "helperColorSaturn", "helperColorUranus", "helperColorNeptune", "helperColorPluto");
             document.getElementById("helperStats").classList.remove("helperColorMercury", "helperColorVenus", "helperColorEarth", "helperColorMars", "helperColorJupiter", "helperColorSaturn", "helperColorUranus", "helperColorNeptune", "helperColorPluto");
             document.getElementById("helperNav").classList.remove("helperColorMercury", "helperColorVenus", "helperColorEarth", "helperColorMars", "helperColorJupiter", "helperColorSaturn", "helperColorUranus", "helperColorNeptune", "helperColorPluto");
+            document.getElementById("move-left").classList.remove("helperColorMercury", "helperColorVenus", "helperColorEarth", "helperColorMars", "helperColorJupiter", "helperColorSaturn", "helperColorUranus", "helperColorNeptune", "helperColorPluto");
+            document.getElementById("move-right").classList.remove("helperColorMercury", "helperColorVenus", "helperColorEarth", "helperColorMars", "helperColorJupiter", "helperColorSaturn", "helperColorUranus", "helperColorNeptune", "helperColorPluto");
 
             if (currentPos == 0) {
                 document.getElementById("helperDesc").classList.add("helperColorMercury");
                 document.getElementById("helperStats").classList.add("helperColorMercury");
                 document.getElementById("helperNav").classList.add("helperColorMercury");
+                document.getElementById("move-left").classList.add("helperColorMercury");
+                                document.getElementById("move-right").classList.add("helperColorMercury");
             } else if (currentPos == 1) {
                 document.getElementById("helperDesc").classList.add("helperColorVenus");
                 document.getElementById("helperStats").classList.add("helperColorVenus");
                 document.getElementById("helperNav").classList.add("helperColorVenus");
+                document.getElementById("move-left").classList.add("helperColorVenus");
+                                document.getElementById("move-right").classList.add("helperColorVenus");
             }else if (currentPos == 2) {
                  document.getElementById("helperDesc").classList.add("helperColorEarth");
                  document.getElementById("helperStats").classList.add("helperColorEarth");
                  document.getElementById("helperNav").classList.add("helperColorEarth");
+                 document.getElementById("move-left").classList.add("helperColorEarth");
+                                 document.getElementById("move-right").classList.add("helperColorEarth");
              }else if (currentPos == 3) {
                   document.getElementById("helperDesc").classList.add("helperColorMars");
                   document.getElementById("helperStats").classList.add("helperColorMars");
                   document.getElementById("helperNav").classList.add("helperColorMars");
+                  document.getElementById("move-left").classList.add("helperColorMars");
+                                  document.getElementById("move-right").classList.add("helperColorMars");
               }else if (currentPos == 4) {
                    document.getElementById("helperDesc").classList.add("helperColorJupiter");
                    document.getElementById("helperStats").classList.add("helperColorJupiter");
                    document.getElementById("helperNav").classList.add("helperColorJupiter");
+                   document.getElementById("move-left").classList.add("helperColorJupiter");
+                                   document.getElementById("move-right").classList.add("helperColorJupiter");
                }else if (currentPos == 5) {
                     document.getElementById("helperDesc").classList.add("helperColorSaturn");
                     document.getElementById("helperStats").classList.add("helperColorSaturn");
                     document.getElementById("helperNav").classList.add("helperColorSaturn");
+                    document.getElementById("move-left").classList.add("helperColorSaturn");
+                                    document.getElementById("move-right").classList.add("helperColorSaturn");
                 }else if (currentPos == 6) {
                      document.getElementById("helperDesc").classList.add("helperColorUranus");
                      document.getElementById("helperStats").classList.add("helperColorUranus");
                      document.getElementById("helperNav").classList.add("helperColorUranus");
+                     document.getElementById("move-left").classList.add("helperColorUranus");
+                                     document.getElementById("move-right").classList.add("helperColorUranus");
                  }else if (currentPos == 7) {
                       document.getElementById("helperDesc").classList.add("helperColorNeptune");
                       document.getElementById("helperStats").classList.add("helperColorNeptune");
                       document.getElementById("helperNav").classList.add("helperColorNeptune");
+                      document.getElementById("move-left").classList.add("helperColorNeptune");
+                                      document.getElementById("move-right").classList.add("helperColorNeptune");
                   }else if (currentPos == 8) {
                        document.getElementById("helperDesc").classList.add("helperColorPluto");
                        document.getElementById("helperStats").classList.add("helperColorPluto");
                        document.getElementById("helperNav").classList.add("helperColorPluto");
+                       document.getElementById("move-left").classList.add("helperColorPluto");
+                                       document.getElementById("move-right").classList.add("helperColorPluto");
                    }
 
             document.getElementById("helperDesc").classList.add("helperDescription-in");

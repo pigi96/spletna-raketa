@@ -7,13 +7,11 @@ var rocketUserObj;
 function initForeground() {
     canvasForeground = document.getElementById("canvasForeground");
 
-    rocketUserObj = new Rocket('Rocket', loadedImages[imgPath+'Rocket.svg'], 2700, 1450, 40, 80);
+    rocketUserObj = new Rocket('Rocket', loadedImages[imgPath+'Rocket.svg'], 2750, 1450, 40, 80);
     rocketUserObj.updateView();
 }
 
 function drawForeground() {
-    console.log("draw foreground");
-
     if (canvasForeground.getContext) {
         var ctx = canvasForeground.getContext("2d");
     }

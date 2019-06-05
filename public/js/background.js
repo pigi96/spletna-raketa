@@ -10,8 +10,6 @@ function initBackground() {
 }
 
 function drawBackground() {
-    console.log("draw background");
-
     if (canvasBackground.getContext) {
         var ctx = canvasBackground.getContext("2d");
     }
