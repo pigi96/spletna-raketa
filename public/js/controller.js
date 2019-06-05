@@ -452,31 +452,38 @@ function setContent(planet){
   if(planet == mercury){
     document.getElementById("description").innerHTML = mercuryDescription;
     document.getElementById("video").src = mercuryVideo;
-     document.getElementById("statistics").innerHTML = mercuryStatistics;
+    document.getElementById("statistics").innerHTML = mercuryStatistics;
   }else if(planet == venus){
     document.getElementById("description").innerHTML = venusDescription;
     document.getElementById("video").src = venusVideo;
+    document.getElementById("statistics").innerHTML = venusStatistics;
   }else if(planet== earth){
     document.getElementById("description").innerHTML = earthDescription;
     document.getElementById("video").src = earthVideo;
+    document.getElementById("statistics").innerHTML = earthStatistics;
   }else if(planet== mars){
     document.getElementById("description").innerHTML = marsDescription;
     document.getElementById("video").src = marsVideo;
+    document.getElementById("statistics").innerHTML = marsStatistics;
   }else if(planet== jupiter){
     document.getElementById("description").innerHTML = jupiterDescription;
     document.getElementById("video").src = jupiterVideo;
+    document.getElementById("statistics").innerHTML = jupiterStatistics;
   }else if(planet == saturn){
     document.getElementById("description").innerHTML = saturnDescription;
     document.getElementById("video").src = saturnVideo;
+    document.getElementById("statistics").innerHTML = saturnStatistics;
   }else if(planet == uranus){
     document.getElementById("description").innerHTML = uranusDescription;
     document.getElementById("video").src = uranusVideo;
+    document.getElementById("statistics").innerHTML = uranusStatistics;
   }else if(planet == neptune){
     document.getElementById("description").innerHTML = neptuneDescription;
     document.getElementById("video").src = neptuneVideo;
+    document.getElementById("statistics").innerHTML = neptuneStatistics;
   }else{
     document.getElementById("description").innerHTML = plutoDescription;
     document.getElementById("video").src = plutoVideo;
+    document.getElementById("statistics").innerHTML = plutoStatistics;
   }
-
 }
